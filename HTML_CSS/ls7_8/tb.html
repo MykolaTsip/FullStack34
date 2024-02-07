@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #rrr {
+            border-collapse: collapse;
+        }
+
+        .myCl {
+            width: 500px;
+            background-color: aqua;
+        }
+
+        .myCl th {
+            background-color: olive;
+        }
+
+        /* 1 */
+        * {
+            font-size: 20px;
+        }
+
+        /* 2 */
+        span {
+            color: bisque;
+        }
+
+        /* 3 */
+        .myClassText {
+            font-size: 16px;
+        }
+
+        /* 4 */
+        #MyID {
+            color: yellowgreen;
+        }
+
+        /* 5 */
+        .newText, .t1, .t2 {
+            margin: 15px;
+            background-color: silver;
+        }
+
+        /* 6 */
+        body .newText {
+            background-color: black;
+        }
+
+        p span {
+            color: red;
+        }
+
+        /* 7 */
+        th[colspan] {
+            background-color: red;
+        }
+
+        /* 8 */
+        td[rowspan="3"] {
+            background-color: violet;
+        }
+
+        /* 9 */
+        div + p {
+            background-color: blueviolet;
+        }
+
+        /* 10 */
+        .scope > div {
+            background-color: brown;
+        }
+
+        /* 11 */
+        .scope ~ div {
+            background-color: orangered;
+        }
+
+        /* 12 */
+        .scope:hover {
+            background-color: black;
+        }
+
+
+        /* 13 */
+        .t2:not(div) {
+            font-size: 30px;
+        }
+
+        /* 14 */
+        .rrr::before {
+            content: 'fgfdmk hmfd';
+        }
+
+        /* 15 */
+        .rrr::after {
+            content: 'Hello';
+        }
+
+        /* 16 */
+        .dd:active {
+            background-color: aquamarine;
+        }
+nth-chil
+        /* 17 */
+        td:d(3n+1) {
+            color: brown;
+        }
+    </style>
+    <table id="rrr" border="1">
+        <tr>
+            <td colspan="1" rowspan="2">
+                <p>
+                    Lorem 1
+                </p>
+            </td>
+            <td colspan="2">
+                Hello
+            </td>
+            <!-- <td colspan="1">
+                World
+            </td> -->
+        </tr>
+        <tr>
+            <!-- <td width="100" align="center" valign="bottom">
+                Lorem 2
+            </td> -->
+            <td height="50"> 
+                Lorem 3
+            </td>
+            <td>
+                Lorem 4
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td> 2 </td>
+            <td> 
+                3
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="myCl" border="1">
+        <thead>
+            <tr height="50">
+                <th>
+                    Name
+                </th>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Xiomi</td>
+                <td>13T</td>
+                <td>650$</td>
+            </tr>
+            <tr>
+                <td>Samsung</td>
+                <td>S20</td>
+                <td>700$</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Iphone</td>
+                <td>14</td>
+                <td>800$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2"> Summary </th>
+                <!-- <th></th> -->
+                <th> 2150$ </th>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+    <p class="myClassText">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, necessitatibus officiis? 
+        Consequatur placeat adipisci dicta facere itaque aut quod accusantium necessitatibus omnis eos,
+        reprehenderit sit dolor nostrum natus repellat minus.
+    </p>
+
+    <h2 id="MyID">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, natus? Rerum fugia
+        numquam voluptas reiciendis sint quaerat esse a dolorem, magnam blanditiis laborum et ea labore, 
+        quasi, exercitationem expedita nemo?
+    </h2>
+
+    <span>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae repellendus perspiciatis modi ratione
+         minima quasi nisi quam odio deserunt quia alias rerum temporibus, minus id. Ratione tenetur consequuntur hic quia.
+    </span>
+
+    <div class="newText">fdgdfgdf</div>
+    <div class="t1">fdgdfgdf</div>
+    <div class="t2">fdgdfgdf</div>
+
+    <p>
+        dsgsdg <span> dsg gfd </span>
+    </p>
+
+    <div>
+        dgfdg
+    </div>
+
+    <span>
+        dsgsgdf
+    </span>
+    
+    <div>
+        dgdfdf
+    </div>
+    <p>
+        sdfdgdf
+    </p>
+
+    <hr>
+
+    <div class="scope">
+        <div>
+            fmgdkflmgdfkgdf
+        </div>
+        <span>
+            dmsklgmls
+        </span>
+        <div>
+            glsfgm;fd  f
+        </div>
+    </div>
+    <div class="rrr">
+        fdglfd hkdmkm
+    </div>
+
+    <p class="t2"> fgfdg</p>
+    <p class="t2"> fdgdfgd</p>
+    <p class="t2"> fdgdfgdf</p>
+
+    <div class="dd">
+        dg dfgdf
+    </div>
+</body>
+</html>
