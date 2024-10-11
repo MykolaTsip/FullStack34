@@ -1,0 +1,17 @@
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 15px 5px;
+    /* position: absolute; */
+    bottom: 50px;
+    width: 100%;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    min-width: 300px;
+}

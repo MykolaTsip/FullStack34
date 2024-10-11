@@ -1,0 +1,14 @@
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 15px 5px;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    min-width: 300px;
+}

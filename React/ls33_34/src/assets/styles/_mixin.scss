@@ -1,0 +1,15 @@
+
+@mixin myFlexMixin ($justfy: center, $align: center, $direction, $wrap) {
+  display: flex;
+  justify-content: $justfy;
+  align-items: $align;
+
+
+  @if ($direction) {
+    flex-direction: $direction;
+  }
+
+  @if ($wrap) {
+    flex-wrap: $wrap;
+  }
+}

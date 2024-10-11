@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .k {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px;
+            flex-shrink: 1
+        }
+
+        .con {
+            /* height: 600px; */
+            height: 800px;
+            border: 2px solid red;
+            display: flex;
+
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start; */
+            /* align-items: baseline; */
+
+            align-items: center;
+
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+        }
+
+        .thr {
+            order: 1;
+            /* align-self: flex-end; */
+            flex-shrink: 2
+        }
+
+        .f {
+            order: 3;
+            /* align-self: flex-start; */
+        }
+
+        .o {
+            order: 2;
+        }
+
+        .t {
+            order: 4;
+        }
+
+        .four {
+            order: 5;
+        }
+
+
+
+    </style>
+
+
+<div class="con">
+    <div class="k o">1</div>
+    <div class="k t">2</div>
+    <div class="k thr">3</div>
+    <div class="k four">4</div>
+    <div class="k f">5</div>
+</div>
+</body>
+</html>

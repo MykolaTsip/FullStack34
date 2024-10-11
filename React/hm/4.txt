@@ -1,0 +1,17 @@
+** Використовувати лише класові компоненти
+** Кожну компоненту розділяти
+
+1. Використовуючи лише класові компоненти повторити вест код
+   згідно дз з попередної лекції.
+ 
+2. Створити 3 компоненти Users, Posts, Comments
+   Скопіювати дані (10 об'єктів) в масив із:
+   https://jsonplaceholder.typicode.com/users
+   https://jsonplaceholder.typicode.com/posts
+   https://jsonplaceholder.typicode.com/comments
+
+   Проітерувати відповідні скопійовані масиви у відповідній компоненті 
+
+3. Створити комаоненту Content і розмістити її в App.
+   Всередині компоненти Content створити та викликати компоненту MyEvents та в якій у довільному порядку використати події:
+   onClick, onMouseDown, onMouseUp, onMouseMove, onCut, onCopy, onMouseWheel

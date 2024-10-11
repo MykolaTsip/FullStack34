@@ -1,0 +1,161 @@
+/* global  */
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    color: #FFF;
+}
+
+.helloWorld {
+    display: none;
+}
+
+main {
+    background-color: #0D1319;
+    padding: 0 100px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sec_navigation {
+    width: 40%;
+    display: flex;
+}
+
+.navigation_sym {
+    font-size: 83px;
+    color: #EEEDED;
+    width: 50%;
+}
+
+.navigation_route {
+    font-size: 35px;
+    color: #E56000;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/main1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* section 1 */
+.sec1 {
+    display: flex;
+}
+
+.sec1_num {
+    width: 40%;
+}
+
+.sec1_num h2 {
+    font-size: 350px;
+    color: #E56000;
+    line-height: 280px;
+}
+
+.sec1_res {
+    width: 60%;
+}
+
+.sec1_res h4 {
+    margin-bottom: 50px;
+}
+
+.sec1_nav {
+    display: flex;
+    border-bottom: 2px solid #B8B8B8;
+    padding: 20px 0;
+}
+
+.sec1_i {
+    color:#B8B8B8;
+    width: 40%;
+}
+
+/* section 2 */
+.sec2 {
+    display: flex;
+}
+
+.sec2_text {
+    width: 60%;
+}
+
+/* section 3 */
+
+.over_block {
+    width: 100%;
+    display: flex;
+    margin: 80px 0;
+}
+
+.over_title {
+    width: 40%;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 151.2px;
+
+    text-shadow:
+    -2px -2px 0 #E56000,
+    2px -2px 0 #E56000,
+    -2px 2px 0 #E56000,
+    2px 2px 0 #E56000;
+    color: #0D1319;
+}
+
+.over_text {
+    width: 60%;
+}
+
+/* section 4 */
+.sec4_cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.sec4_cont h2 {
+    color: #E56000;
+    font-size: 77px;
+    line-height: 92px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sec4_l {
+    width: 50%;
+}
+
+.sec4_r {
+    width: 40%;
+}
+
+.sec4_l div, .sec4_r div {
+    line-height: 40px;
+    margin: 10px 0;
+}

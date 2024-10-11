@@ -1,0 +1,89 @@
+// @import url('./index.scss');
+// @import './index.scss';
+
+@import './assets/styles/mixin';
+
+$ss: flex;
+$col: red;
+
+
+$color1: #111111;
+
+
+
+
+.hello {
+  display: $ss;
+  color: $col;
+
+  .world {
+    font-size: 12px;
+  }
+}
+
+
+// a, a-b, a-b-c,
+.a {
+
+  &-b { // .a-b
+    color: $col;
+
+    &-c { // .a-b-c
+      color: $col;
+    }
+  }
+}
+
+
+.hello {
+  display: $ss;
+  color: $col;
+}
+
+
+// ~ers {
+//   color: red;
+// }
+
+
+.h {
+  @extend .hello
+}
+
+//
+
+// @function remove-where($list, $condition) {
+//   $new-list: ();
+//   $separator: list.separator($list);
+//   @each $element in $list {
+//     @if (not meta.call($condition, $element)) {
+//       $new-list: list.append($new-list, $element, $separator: $separator);
+//     }
+//   }
+//   @return $new-list;
+// }
+
+
+
+
+
+
+
+//
+
+
+.hello .world {
+  font-size: remove-where(1, 2);
+  @include myFlexMixin(flex-start, flex-end, column, wrap)
+}
+
+
+
+@media screen and (max-width: 333px) {
+  
+}
+
+@media (max-width: 333px) {
+  
+}
+
