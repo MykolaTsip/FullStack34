@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .text {
+            background-color: aqua;
+            padding: 15px;
+            /* width: 800px; */
+            width: 60%;
+            /* height: 50vh; */
+
+            min-width: 100px;
+            max-width: 1200px;
+            
+            min-height: 300px;
+            max-height: 800px;
+
+            font-size: 22px;
+        }
+
+        /* @media screen and (max-width: 600px) {
+            .text {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (min-width: 1400px) {
+            .text {
+                font-size: 30px;
+            }
+        } */
+
+        /*  260-390, 390-550, 550-768, 768-1024, 1024-1440, 1440-1920  */
+
+        @media screen and (min-width: 260px) and (max-width: 550px) {
+            .text {
+                width: 220px;
+                font-size: 14px;
+            }  
+        }
+
+        @media screen and (min-width: 550px) and (max-width: 1024px) {
+            .text {
+                font-size: 16px;
+                width: 60%;
+                min-width: 500px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1440px) {
+            .text {
+                font-size: 22px;
+                min-width: 1000px;
+            }
+        }
+
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            .text {
+                font-size: 30px;
+                min-width: 1400px;
+            }
+        }
+
+        @media screen and (min-width: 1920px) {
+            .text {
+                width: 40%;
+                max-width: 2500px;
+            }
+        }
+    </style>
+
+    <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam rem ut, facere alias quae reiciendis molestiae perferendis itaque necessitatibus dignissimos eaque inventore excepturi laborum minus, at provident, impedit nesciunt.
+        Excepturi perspiciatis necessitatibus numquam explicabo vero enim blanditiis. Maxime dignissimos eligendi nihil. Tempore facere laudantium rerum pariatur praesentium incidunt hic architecto fugiat, nemo sunt, nisi error ex voluptate necessitatibus repellat!
+        Adipisci eum quis recusandae nobis cum, voluptatem dolores nisi, esse eveniet aliquid voluptates eligendi nam. Libero suscipit obcaecati mollitia quam, reiciendis quis fugiat ducimus consequuntur, autem id dignissimos, temporibus inventore?
+        Quaerat mollitia quae porro, quod, rerum incidunt expedita eum, laboriosam autem consequuntur magnam sunt ipsam molestiae deserunt? Quam voluptate voluptatem nostrum voluptates expedita, molestias odio itaque hic explicabo odit iusto?
+        Accusantium nemo, officia tenetur modi quibusdam odit dolorem enim delectus rerum provident sapiente explicabo facilis, mollitia ipsa ullam sit quidem repellat reprehenderit alias quod? Obcaecati mollitia nobis atque eaque enim.
+    </div>
+
+</body>
+</html>

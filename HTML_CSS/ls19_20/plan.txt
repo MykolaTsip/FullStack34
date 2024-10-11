@@ -1,0 +1,19 @@
+scm git
+
+git init, log, status, show, add, commit (a)m, mv
+
+.gitignore
+
+git branch, checkout, branch -a, branch -d(-D), branch -b,
+
+git merge, reset ~HEAD, 
+git checkout fileName, hasgFunk
+git reset --hard hashFunk
+
+push (--force), clone, pull, fetch (origin)
+
+conflicts
+
+git rebase
+
+git tag

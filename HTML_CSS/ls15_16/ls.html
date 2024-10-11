@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .grr {
+            display: grid;
+            /* grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px 100px; */
+
+            /* grid-template-columns: 1fr .5fr 1fr 100px; */
+            /* grid-template-columns: min-content auto minmax(.5fr 1fr); */
+            /* grid-template-columns: fit-content(300px) fit-content(300px); */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(2, 1fr) 100px 1fr; */
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 50px);
+
+
+            /* grid-auto-rows: 100px;
+            grid-auto-columns: auto; */
+
+
+            justify-items: center;
+            /* justify-items: end; */
+            /* justify-items: start; */
+
+            align-items: center;
+            /* align-items: end; */
+            /* align-self: start; */
+
+        }
+
+
+        .two {
+            justify-self: end;
+            align-self: end;
+        }
+
+        .four {
+            justify-self: start;
+            align-self: start;
+        }
+
+
+        .cite {
+            display: grid;
+            grid-template-areas: 'header header header header'
+                                 'sidebar conte conte conte'
+                                 'el el el2 el2'
+                                 'footer footer footer footer';
+
+        }
+
+
+        .head {
+            grid-area: header;
+            background-color: aqua;
+        }
+
+        .cont {
+            grid-area: conte;
+            background-color: blue;
+        }
+
+        .sid {
+            grid-area: sidebar;
+            background-color: blueviolet;
+        } 
+
+        .foot {
+            grid-area: footer;
+            background-color: red;
+        }
+
+        .el {
+            grid-area: el;
+            background-color: yellowgreen;
+        }
+
+        .el2 {
+            grid-area: el2;
+            background-color: silver;
+        }
+
+
+        .g2 {
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(3, 50px);
+        }
+
+        .tw {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .fr {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+    
+
+    <div class="grr">
+        <div>1</div>
+        <div class="two">2</div>
+        <div>3</div>
+        <div class="four">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+
+    <hr>
+    <hr>
+
+
+    <div class="cite">
+        <div class="head">Header</div>
+        <div class="cont">Content</div>
+        <div class="sid">Sideabr</div>
+        <div class="el">Elevemt</div>
+        <div class="el2">Elevemt 2</div>
+
+        <div class="foot">Footer</div>
+    </div>
+
+
+    <hr>
+    <hr>
+
+
+    <div class="g2">
+        <div class="fr">1</div>
+        <div class="tw">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
